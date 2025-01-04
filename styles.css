@@ -1,108 +1,158 @@
-/* add your CSS here */
-
-.card-binder-page {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-container {
-    position: relative;
-    margin: 10px;
-    border: 10px solid #FFDE00;
-    width: 350px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    overflow: visible;
-    padding-bottom: 0.25em;
-}
-
-.blastoise-background {
-    background: linear-gradient(to bottom, #ADD8E6, #5F9EA0, #003F63);
-}
-
-.charizard-background {
-    background: radial-gradient(circle at bottom center, #FF4500, #FF8C00, #330000);
-}
-
-.mewtwo-background {
-    background: radial-gradient(circle, #6A0DAD, #3B0080, #1C0030);
-}
-
+/* General typography styles */
 h3 {
     position: relative;
     z-index: 3;
     font: bold 24px/1.5 Raleway, sans-serif;
     margin: 0 0 0 1em;
     padding: 0.25em 0;
-    text-align: justify;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-.image-container img {
-    position: relative;
-    z-index: 2;
-    display: block;
-    margin: 0 auto 0.25em;
-    display: block;
-    border: 5px solid #FFDE00;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    width: 300px;
-}
-
-img {
-    width: 300px;
-    margin: 1.25em;
-    padding: 0;
-    border: 5px solid #FFDE00;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.card-overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.25);
-    pointer-events: none;
-}
-
-.text-box {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    width: 100%;
-    padding: 0 1em;
-    line-height: 1.8;
-    overflow: visible;
-    word-wrap: break-word;
-    margin-bottom: 0;
-    box-sizing: border-box;
-}
-
-.fact {
-    font: italic 12px/20px Raleway, sans-serif;
-    line-height: 1.8;
-    margin-bottom: 1em;
-    padding: 0 0.5em;
+    color: white; /* Contrast against card background */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Improves readability */
 }
 
 ul {
-    font: normal 12px/1.8 Raleway, sans-serif;
-    list-style-type: none;
-    margin-left: 1em;
-    padding-left: 1em;
-    text-align: justify;
+    font: normal 12px/1.8 Raleway, sans-serif; /* Default list font style */
+    list-style-type: none; /* Removes bullets for a clean design */
+    margin-left: 1em; /* Adds space to the left of the list */
+    padding-left: 1em; /* Further indents the list items */
+}
+
+.fact {
+    font: italic 12px/20px Raleway, sans-serif; /* Italic style for emphasis */
+    line-height: 1.8; /* Matches text-box line height for consistency */
+    margin-bottom: 1em; /* Adds spacing below the fact */
+    padding: 0 0.5em; /* Adds horizontal padding for better readability */
 }
 
 .attack {
-    font-weight: bold;
-    color: #FFDE00
+    font-weight: bold; 
+    color: #FFDE00; /* Pokémon Yellow */
 }
 
 .description {
-    font: normal 12px/20px Raleway, san-serif;
+    font: normal 12px/20px Raleway, sans-serif;
 }
 
+/* Flexbox container for the cards */
+.card-binder-page {
+    display: flex;
+    flex-wrap: wrap; /*Allows cards to wrap on smaller screens */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 1em; /* Adds space between cards */
+}
+
+/* General card container styles */
+.card-container {
+    position: relative;
+    margin: 10px;
+    border: 10px solid #FFDE00; /* Pokémon Yellow border */
+    width: 350px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for a 3D effect */
+    padding-bottom: 0.25em; /* Prevents text from feeling squished */
+}
+
+/* Overlay effect for cards */
+.card-overlay {
+    position: absolute; /* Positions the overlay relative to its closest positioned ancestor */
+    z-index: 1; /* Places the overlay below the image (lower than z-index: 2) */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the overlay covers the entire card */
+    height: 100%; /* Matches the card's height */
+    background: rgba(0, 0, 0, 0.25); /* Adds a semi-transparent black overlay for readability*/
+    pointer-events: none; /* Prevents the overlay from blocking interactions with underlying content*/
+}
+
+/* Container for the text on each card */
+.text-box {
+    position: relative; /* Positions the text-box within the card */
+    z-index: 2; /* Places text above the overlay */
+    color: white; /* Ensures text is visible over the dark background */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Enhances readability with subtle shadow */
+    width: 100%; /* Makes the text-box span the full width of the card */
+    padding: 0 1em; /* Adds horizontal padding for better text spacing */
+    line-height: 1.8; /* Improves readability by increasing line height */
+    overflow-wrap: break-word; /* Prevents long words from breaking the layout */
+    margin-bottom: 0; /* Removes unnecessary bottom margin */
+    box-sizing: border-box; /* Includes padding in the element's total width/height calculation */
+}
+
+/* General image styles */
+img {
+    width: 300px;
+    padding: 0;
+    border: 5px solid #FFDE00; /* Matches card border */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds 3D card effect */
+}
+
+/* Styles for images inside the image-container */
+.image-container img {
+    position: relative; /* Allows positioning relative to its container for layering */
+    z-index: 2; /* Ensures the image appears above the overlay */
+    display: block; /* Removes extra space below the image and centers it*/
+    margin: 0 auto 0.25em; /* Centers the image horizontally and adds a small bottom margin*/
+}
+
+/* Background gradients for each card */
+.blastoise-background {
+    background-color: #5F9EA0; /* Fallback: Cyan (middle gradient color) */
+    background: linear-gradient(to bottom, #ADD8E6, #5F9EA0, #003F63);
+}
+
+.charizard-background {
+    background-color: #FF8C00; /* Fallback: Bright orange (middle gradient color) */
+    background: radial-gradient(circle at bottom center, #FF4500, #FF8C00, #330000);
+}
+
+.mewtwo-background {
+    background-color: #3B0080; /* Fallback: Deep purple (middle gradient color) */
+    background: radial-gradient(circle, #6A0DAD, #3B0080, #1C0030);
+}
+
+/* Style for the header */
+header {
+    text-align: center;
+    margin: 1em 0;
+    font: bold 32px Raleway, sans-serif;
+    color: #FFCC00; /* Pokémon Yellow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds depth to the text */
+    background-color: #204D9E; /* Pokémon Blue */
+    border: 3px solid #FFCC00; /* Thin yellow trim */
+    padding: 1em;
+    border-radius: 10px; /* Makes the header edges rounded */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .card-container {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .card-binder-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        font-size: 24px;
+        margin: 0.5em 0;
+    }
+}
+ 
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #204D9E; /* Pokémon Blue */
+    color: white; /* High contrast for readability */
+    font-size: 14px;
+    border-top: 2px solid #FFCC00; /* Top border matches Pokémon Yellow */
+}
+
+footer a {
+    color: #FFCC00;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline; /* Adds interactivity for links */
+}
