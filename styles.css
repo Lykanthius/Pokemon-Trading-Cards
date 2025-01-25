@@ -25,7 +25,7 @@ ul {
 
 .attack {
     font-weight: bold; 
-    color: #FFDE00; /* Pokémon Yellow */
+    color: #ffde00; /* Pokémon Yellow */
 }
 
 .description {
@@ -44,7 +44,7 @@ ul {
 .card-container {
     position: relative;
     margin: 10px;
-    border: 10px solid #FFDE00; /* Pokémon Yellow border */
+    border: 10px solid #ffde00; /* Pokémon Yellow border */
     width: 350px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for a 3D effect */
     padding-bottom: 0.25em; /* Prevents text from feeling squished */
@@ -80,7 +80,7 @@ ul {
 img {
     width: 300px;
     padding: 0;
-    border: 5px solid #FFDE00; /* Matches card border */
+    border: 5px solid #ffde00; /* Matches card border */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds 3D card effect */
 }
 
@@ -94,18 +94,18 @@ img {
 
 /* Background gradients for each card */
 .blastoise-background {
-    background-color: #5F9EA0; /* Fallback: Cyan (middle gradient color) */
-    background: linear-gradient(to bottom, #ADD8E6, #5F9EA0, #003F63);
+    background-color: #5f9ea0; /* Fallback: Cyan (middle gradient color) */
+    background: linear-gradient(to bottom, #add8e6, #5f9ea0, #003f63);
 }
 
 .charizard-background {
-    background-color: #FF8C00; /* Fallback: Bright orange (middle gradient color) */
-    background: radial-gradient(circle at bottom center, #FF4500, #FF8C00, #330000);
+    background-color: #ff8c00; /* Fallback: Bright orange (middle gradient color) */
+    background: radial-gradient(circle at bottom center, #ff4500, #ff8c00, #330000);
 }
 
 .mewtwo-background {
-    background-color: #3B0080; /* Fallback: Deep purple (middle gradient color) */
-    background: radial-gradient(circle, #6A0DAD, #3B0080, #1C0030);
+    background-color: #3b0080; /* Fallback: Deep purple (middle gradient color) */
+    background: radial-gradient(circle, #6a0dad, #3b0080, #1c0030);
 }
 
 /* Style for the header */
@@ -113,10 +113,10 @@ header {
     text-align: center;
     margin: 1em 0;
     font: bold 32px Raleway, sans-serif;
-    color: #FFCC00; /* Pokémon Yellow */
+    color: #ffcc00; /* Pokémon Yellow */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds depth to the text */
-    background-color: #204D9E; /* Pokémon Blue */
-    border: 3px solid #FFCC00; /* Thin yellow trim */
+    background-color: #204d9e; /* Pokémon Blue */
+    border: 3px solid #ffcc00; /* Thin yellow trim */
     padding: 1em;
     border-radius: 10px; /* Makes the header edges rounded */
 }
@@ -143,14 +143,14 @@ header {
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #204D9E; /* Pokémon Blue */
+    background-color: #204d9e; /* Pokémon Blue */
     color: white; /* High contrast for readability */
     font-size: 14px;
-    border-top: 2px solid #FFCC00; /* Top border matches Pokémon Yellow */
+    border-top: 2px solid #ffcc00; /* Top border matches Pokémon Yellow */
 }
 
 footer a {
-    color: #FFCC00;
+    color: #ffcc00;
     text-decoration: none;
 }
 footer a:hover {
