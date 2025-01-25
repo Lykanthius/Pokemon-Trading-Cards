@@ -113,10 +113,10 @@ header {
     text-align: center;
     margin: 1em 0;
     font: bold 32px Raleway, sans-serif;
-    color: #ffcc00; /* Pokémon Yellow */
+    color: #fc0; /* Pokémon Yellow */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds depth to the text */
     background-color: #204d9e; /* Pokémon Blue */
-    border: 3px solid #ffcc00; /* Thin yellow trim */
+    border: 3px solid #fc0; /* Thin yellow trim */
     padding: 1em;
     border-radius: 10px; /* Makes the header edges rounded */
 }
@@ -146,11 +146,11 @@ footer {
     background-color: #204d9e; /* Pokémon Blue */
     color: white; /* High contrast for readability */
     font-size: 14px;
-    border-top: 2px solid #ffcc00; /* Top border matches Pokémon Yellow */
+    border-top: 2px solid #fc0; /* Top border matches Pokémon Yellow */
 }
 
 footer a {
-    color: #ffcc00;
+    color: #fc0;
     text-decoration: none;
 }
 footer a:hover {
